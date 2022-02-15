@@ -1,0 +1,3 @@
+C:\Users\IVAN\Documents\GitHub\Something-on-Angular\my-app>
+ng new my-first-project
+ng serve open
