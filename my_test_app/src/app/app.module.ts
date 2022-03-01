@@ -3,14 +3,30 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {
+  GasCardModule,
+  GasCheckboxModule,
+  GasIconsModule,
+  GasInputModule,
+  GasLayoutModule,
+  GasRadioModule
+} from "@cikrf/gas-ui-kit";
+import { MyGasComponent} from "./gasmodule/gas.component";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MyGasComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    GasLayoutModule,
+    GasCardModule,
+    GasInputModule,
+    GasRadioModule,
+    GasCheckboxModule,
+    GasIconsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
