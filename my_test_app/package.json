@@ -19,7 +19,7 @@
     "@angular/platform-browser": "~13.2.0",
     "@angular/platform-browser-dynamic": "~13.2.0",
     "@angular/router": "~13.2.0",
-    "@cikrf/gas-ui-kit": "^2.0.892",
+    "@cikrf/gas-ui-kit": "2.1.21",
     "@cikrf/gas-utils": "^2.0.16",
     "@ngneat/until-destroy": "^9.0.0",
     "date-fns": "^2.28.0",

@@ -4,12 +4,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {
-  GasCardModule,
-  GasCheckboxModule,
-  GasIconsModule,
-  GasInputModule,
-  GasLayoutModule,
-  GasRadioModule
+    GasCardModule,
+    GasCheckboxModule,
+    GasIconsModule,
+    GasInputModule,
+    GasLayoutModule,
+    GasRadioModule, GasSwitchModule
 } from "@cikrf/gas-ui-kit";
 import { MyGasComponent} from "./gasmodule/gas.component";
 
@@ -18,16 +18,17 @@ import { MyGasComponent} from "./gasmodule/gas.component";
     AppComponent,
     MyGasComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    GasLayoutModule,
-    GasCardModule,
-    GasInputModule,
-    GasRadioModule,
-    GasCheckboxModule,
-    GasIconsModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        GasLayoutModule,
+        GasCardModule,
+        GasInputModule,
+        GasRadioModule,
+        GasCheckboxModule,
+        GasIconsModule,
+        GasSwitchModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

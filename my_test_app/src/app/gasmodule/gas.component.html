@@ -17,8 +17,8 @@
 <!--</gas-layout>-->
 
 
-<gas-layout title="hello">
-  <div class="grid grid-justify-center" title="hello">
+
+  <div class="grid grid-justify-center" title="div -> grid">
 <!--    <div class="col-1">-->
 <!--      <gas-card class="h-300 mr-md">Content 1</gas-card>-->
 <!--    </div>-->
@@ -32,12 +32,16 @@
             </div>
             <gas-input
               label="Пользователь"
-              infoIcon
               required
+              suffixIconColor="black"
               placeholder="Введите логин"
               class="mb-sm"
               style=" padding-left: 48px; padding-right: 48px;">
             </gas-input>
+
+            <gas-icon name="arrows-right" class="icon-brand ma-md"></gas-icon>
+            <gas-icon icon name="actions-file"></gas-icon>
+
             <gas-input
               label="Пароль"
               infoIcon required
@@ -47,6 +51,21 @@
             <gas-checkbox style="padding-left: 48px; padding-right: 48px; padding-bottom: 48px">
               Оставаться в системе
             </gas-checkbox>
+            <div>
+              <gas-switch
+                [value]="form.disabled"
+                (click)="disableForm()"
+              >
+                Disable form
+              </gas-switch>
+
+              <gas-switch
+                [value]="form.disabled"
+                (click)="disableItem()"
+              >
+                Disable первый элемент
+              </gas-switch>
+            </div>
           </gas-card>
 <!--        </gas-card>-->
       </div>
@@ -55,18 +74,22 @@
 <!--      <gas-card class="h-300">Content 3</gas-card>-->
 <!--    </div>-->
   </div>
-</gas-layout>
 
-<!--<ng-template #top>-->
-<!--  <div class="pa-md">Content top</div>-->
-<!--</ng-template>-->
 
-<!--<ng-template #headerBottom>-->
-<!--  <div>Header bottom component</div>-->
-<!--</ng-template>-->
 
-<!--<ng-template #bottom>-->
-<!--  <div class="pa-md">Content bot</div>-->
-<!--</ng-template>-->
+
+<!--<gas-input-->
+<!--  label="Пользователь"-->
+<!--  infoIcon-->
+<!--  required-->
+<!--  placeholder="Введите логин"-->
+<!--  class="mb-sm"-->
+<!--  style=" padding-left: 48px; padding-right: 48px;">-->
+<!--</gas-input>-->
+
+
+
+
+
 
 
