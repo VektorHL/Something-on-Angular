@@ -1,93 +1,84 @@
-<!--<!DOCTYPE html>-->
-<!--<html lang="en">-->
-<!--<head>-->
-<!--  <meta charset="UTF-8">-->
-<!--  <title>Title</title>-->
-<!--</head>-->
-<!--<body>-->
+<!--<div class="grid h-99"></div>-->
+  <!-- странно, когда меньше 100 - не работает -->
+<div class="grid grid-justify-center">
+  <div class="col-9 ">
+    <div class="grid grid-justify-center">
+      <div class="col-6">
+        <div style="padding: 48px;">
 
-<!--</body>-->
-<!--</html>-->
+          <gas-card class="" style=" box-shadow: black; ">
 
-
-<!--<gas-layout>-->
-<!--  <div class="w-100-p h-600">-->
-<!--    hello-->
-<!--  </div>-->
-<!--</gas-layout>-->
-
-
-
-  <div class="grid grid-justify-center" title="div -> grid">
-<!--    <div class="col-1">-->
-<!--      <gas-card class="h-300 mr-md">Content 1</gas-card>-->
-<!--    </div>-->
-
-    <div class="col-4">
-      <div style="padding: 48px;">
-<!--        <gas-card class="h-600 ">-->
-          <gas-card class="h-auto" style=" box-shadow: black">
-            <div class="mt-lg mb-md pb-md">
-              ЦИФРОВАЯ ПЛАТФОРМА
+            <div class="mb-sm pb-md">
+              <img class="my-img" src="../../assets/images/logo1.PNG" alt="">
+              <p title="Выше должно быть лого" style="font-weight: bold; font-family: 'PT Sans',sans-serif">ЦИФРОВАЯ ПЛАТФОРМА</p>
             </div>
             <gas-input
               label="Пользователь"
               required
-              suffixIconColor="black"
               placeholder="Введите логин"
               class="mb-sm"
               style=" padding-left: 48px; padding-right: 48px;">
             </gas-input>
-
-            <gas-icon name="arrows-right" class="icon-brand ma-md"></gas-icon>
-            <gas-icon icon name="actions-file"></gas-icon>
-
             <gas-input
               label="Пароль"
-              infoIcon required
+              required
               placeholder="Введите пароль"
-              style="padding-left: 48px; padding-right: 48px; padding-bottom: 48px">
+              style="padding-left: 48px; padding-right: 48px;"
+              postfixIcon="cool-show"
+              [nativeType]="ps"
+              class="pb-lg">
             </gas-input>
-            <gas-checkbox style="padding-left: 48px; padding-right: 48px; padding-bottom: 48px">
+
+            <gas-checkbox style="padding-left: 48px; padding-right: 48px; font-family: 'PT Sans', sans-serif;" class="pb-md">
               Оставаться в системе
             </gas-checkbox>
-            <div>
-              <gas-switch
-                [value]="form.disabled"
-                (click)="disableForm()"
-              >
-                Disable form
-              </gas-switch>
 
-              <gas-switch
-                [value]="form.disabled"
-                (click)="disableItem()"
-              >
-                Disable первый элемент
-              </gas-switch>
+            <div style="padding-left: 30px; padding-right: 48px">
+
+              <div class="grid grid-align-center" style="padding-bottom: 48px;">
+                <div class="col-8 grid-justify-start ">
+                  <div class="pb-md" style="">
+                    <gas-switch (press)="disabl()" (click)="disabl()" [value]="mark1" class="my-input pb-md" enabledText=" " disabledText=" " style="font-family: 'PT Sans',sans-serif;">
+                      Рабочий
+                    </gas-switch>
+                  </div>
+                  <gas-switch (press)="disabl()" (click)="disabl()" [value]="mark2" enabledText=" " disabledText=" " style="font-family: 'PT Sans',sans-serif;">
+                    Тренировачный
+                  </gas-switch>
+                </div>
+                <div class="col-4">
+                  <div class="grid">
+                    <div class="col">
+                      <div gasButton="primary">Авторизоваться</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+
           </gas-card>
-<!--        </gas-card>-->
+
+        </div>
       </div>
     </div>
-<!--    <div class="col-1">-->
-<!--      <gas-card class="h-300">Content 3</gas-card>-->
-<!--    </div>-->
   </div>
+</div>
+
+<div id="footer">
+  <div class="link-normal" style="text-align: center;">
+    <p>Справочная информация &nbsp;&nbsp;&nbsp; Служба поддержки</p>
+  </div>
+  <div class="text-placeholder" style="text-align: center;">
+    <p>Версия сборки x.x.xxxx</p>
+  </div>
+</div>
 
 
-
-
-<!--<gas-input-->
-<!--  label="Пользователь"-->
-<!--  infoIcon-->
-<!--  required-->
-<!--  placeholder="Введите логин"-->
-<!--  class="mb-sm"-->
-<!--  style=" padding-left: 48px; padding-right: 48px;">-->
-<!--</gas-input>-->
-
-
+<!--<gas-layout>-->
+<!--  <div class="w-100-p h-600">-->
+<!--    Layout-->
+<!--  </div>-->
+<!--</gas-layout>-->
 
 
 

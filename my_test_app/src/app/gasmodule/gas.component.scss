@@ -1,1 +1,21 @@
 .gas-layout {}
+
+#footer {
+  position: fixed; /* Фиксированное положение */
+  //overflow: hidden;
+  //background-size: cover;
+  left: 0; bottom: 0; /* Левый нижний угол */
+  padding: 10px; /* Поля вокруг текста */
+  width: 100%; /* Ширина слоя */
+}
+
+.my-img {
+  height: 40%;
+  width: 40%;
+}
+
+.my-input {
+  font-family: 'PT Sans',sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
