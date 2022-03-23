@@ -15,6 +15,7 @@ import {
 } from "@cikrf/gas-ui-kit";
 import { MyGasComponent} from "./gasmodule/gas.component";
 import {MyGasMenuComponent} from "./menulikemodule/menu-like-gas.component";
+import {ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -22,24 +23,25 @@ import {MyGasMenuComponent} from "./menulikemodule/menu-like-gas.component";
     MyGasComponent,
     MyGasMenuComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    GasBaseModule,
-    GasButtonModule,
-    GasCardModule,
-    GasCheckboxModule,
-    GasLayoutModule,
-    GasCardModule,
-    GasIconsModule,
-    GasInputModule,
-    GasRadioModule,
-    GasSwitchModule,
-    GasSpinnerModule,
-    GasHeaderModule,
-    GasPanelModule,
-    GasTabsModule,
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        GasBaseModule,
+        GasButtonModule,
+        GasCardModule,
+        GasCheckboxModule,
+        GasLayoutModule,
+        GasCardModule,
+        GasIconsModule,
+        GasInputModule,
+        GasRadioModule,
+        GasSwitchModule,
+        GasSpinnerModule,
+        GasHeaderModule,
+        GasPanelModule,
+        GasTabsModule,
+        ReactiveFormsModule,
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
