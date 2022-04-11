@@ -51,12 +51,24 @@ import { map, switchMap } from 'rxjs/operators';
 export class MyGasComponent {
 
   mark1: boolean = true;
-  mark2: boolean = false;
+  mark2: boolean = !this.mark1;
   sw = false;
 
-  public disabl(): void {
-    this.form1.setValue(!this.form1.value);
-    this.form2.setValue(!this.form2.value);
+  public disable1(): void {
+    if (this.form1.value == this.form2.value) {
+      this.form2.setValue(!this.form1.value);
+    }
+    // this.form1.setValue(!this.form1.value);
+    // this.form2.setValue(!this.form2.value);
+    //this.form1.setValue(!this.form1.value);
+  }
+
+  public disable2(): void {
+    if (this.form1.value == this.form2.value) {
+      this.form1.setValue(!this.form2.value);
+    }
+    // this.form1.setValue(!this.form1.value);
+    // this.form2.setValue(!this.form2.value);
     //this.form1.setValue(!this.form1.value);
   }
 
